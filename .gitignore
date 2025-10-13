@@ -1,9 +1,7 @@
 # customize
-data/
 .pdf
 .csv
 .xlsx
-.JPG
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
