@@ -22,7 +22,8 @@ project/
 
 🧩 VLM
    - Gemini 2.5 Flash(api) : 한국어, 영어 성능이 좋지만, 텍스트 경계 정보가 명확하지 않아서 OCR 대비 인식 안정성 낮음
-   - microsoft/Florence-2-large(opensource) : 한국어 인식율이 낮음. 
+   - microsoft/Florence-2-large(opensource) : 한국어 인식율이 낮음. 모든 텍스트(문자)를 잡으려고 함.
+   - Qwen/Qwen2.5-VL-7B-Instruct : 프롬프트의 영향, json형태로 제대로 나오지 않으면 중간 오류가 잦음. 한국어 인식율 낮음. 다만, text와 블록 인식이 괜찮은편.
    
 
 > 결론 : ✅ PaddleOCR을 도면용 텍스트 인식 baseline 모델로 채택
