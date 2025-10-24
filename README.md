@@ -13,7 +13,10 @@ project/
 ```
 
 ## 🧪 실험 기록
-### 🧾 Text Recognition
+
+<details>
+<summary>🧾 Text Recognition </summary>
+
 도면 내 텍스트(한글, 영어, 숫자, 기호) 를 정확하게 추출하기 위해 OCR 기반 접근, VLM 기반 접근으로 실험을 진행함.
 
 🧩 OCR Library
@@ -26,7 +29,11 @@ project/
    - microsoft/Florence-2-large(33개) : 한글 인식률 낮음. 모든 텍스트(문자)를 잡으려고 함.
    - Qwen/Qwen2.5-VL-7B-Instruct(10개) : 프롬프트의 실험 필요, json형태로 제대로 나오지 않으면 중간 오류가 잦음. 한국어 인식율 낮음. 다만, text와 블록 인식이 괜찮은편.
 
-### 🧾 추가 실험 Diagram Segmentation :  
+</details>
+
+<details>
+<summary>🧾 추가 실험 Diagram Segmentation </summary>
+  
 도면 내 Diagram의 블록(Block), 선(Line) 인식 테스트
 
 1️⃣ Hough Transform + OpenCV조합 
@@ -40,3 +47,14 @@ project/
 
 3️⃣ SAM 기반 세그멘테이션 실험 : SAM2
 - 추후 예정
+
+</details>
+
+<details>
+<summary>🧾 Text Recognition : DeepSeek-OCR: </summary>
+
+- paper : DeepSeek-OCR: Contexts Optical Compression
+- github : https://github.com/deepseek-ai/DeepSeek-OCR
+
+
+</details>
