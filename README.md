@@ -3,6 +3,9 @@
 - **Purpose :** 도면(설계도, 회로도, 시스템 다이어그램 등)에서 Layout Item을 자동으로 인식하고 추출하는 자동화 프로그램 개발
 - **Task :** Text 인식/ Diagram 인식 / 매핑
 
+> 🗂️ This repository is a **public version** of the internal project `private_drawing-detector`.  
+> 일부 실험 코드 및 데이터셋은 비공개 버전에만 포함됨.
+
 ## 📁 Folder Structure
 ```
 project_drawing-detector/
