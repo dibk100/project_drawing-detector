@@ -9,7 +9,7 @@ project/
 ├── 
 ├── 
 ├──    
-└── requirements.txt    
+└── requirements.txt    # paddle 활용X
 ```
 ## 📌 Notes & Issues 🧷
 - PaddleOCR 설치 이슈(ing) : CUDA 12.6 (PyTorch), PaddlePaddle GPU 2.6.2, PaddleOCR 2.7.0 설치   
@@ -17,8 +17,7 @@ project/
    - 설치 중단 : 버전 연동이 어려운 상태, CUDA 12.4 or 11.8로 다운그레이드해서 다시 시도
 - deepseekOCR 설치 이슈(Done) : CUDA 12.6(cu126) , [torch == 2.6.0](https://huggingface.co/deepseek-ai/DeepSeek-OCR)
    - pip install flash-attn==2.7.3 --no-build-isolation :: FlashAttention 포기 :: 그냥 GPU로 Huggingface transformers inference
-   - nvidia-cuda-toolkit : 이거 최신버전(13.0)으로 설치함.. "flash_attention_2" 이걸 사용하기 위해.. 
-   - 
+   - nvidia-cuda-toolkit : 이거 최신버전(13.0)으로 설치함.. "flash_attention_2" 이걸 사용하기 위해.. -> 결국 flash 사용 안함. 
 
 
 ## 🧪 실험 기록

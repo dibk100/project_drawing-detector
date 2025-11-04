@@ -1,0 +1,26 @@
+ 
+                                                                                                                                                                                                                                                                 
+ 
+
+H-NGR-A1
+6/10KV F-CV 1C 300mm
+
+H-HVI=L11,L12,L13/121,L22,L23/L31,L32,L33
+6/10KV F-CV 1C 300mm
+
+                                                                                                                                                                                                                                                                  
+  
+                                                                                                                                                                                                                                                                      
+
+  
+
+S-HVI-Al, A2
+0.6/1KV F-CWS 4C 6mm? -2L
+
+POSCO DX SUPPLY SCOPE
+
+440V FEEDER PANEL            6.6KV FEEDER VCB PANEL
+(DISTRIBUTION)                   (EMERGENCY & MCC)
+
+POSCO DX SUPPLY SCOPE
+
