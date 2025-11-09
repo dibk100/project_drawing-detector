@@ -95,3 +95,34 @@ def split_and_extract_regions(drawing, centers_x, centers_y, fallback=20, zoom_f
             region_id += 1
 
     return regions
+
+def split_regions_vertical(drawing, centers_x, fallback=20, zoom_factor=2.0):
+    """
+    심볼 중심 x 좌표 기준으로 영역을 나누고
+    y는 전체 높이를 사용.
+    """
+    height, width = drawing.shape[:2]
+
+    # 중심 x 좌표 그룹핑 (중복 제거)
+    grouped_x = group_close_coords(sorted(centers_x))
+
+    # 좌표 기준 영역 경계 생성
+    split_x = [0] + grouped_x + [width]
+
+    regions = []
+    region_id = 1
+
+    for j in range(len(split_x)-1):
+        x1, x2 = split_x[j], split_x[j+1]
+        if (x2 - x1) < fallback:
+            x2 = min(width, x1 + fallback)
+        
+        roi = drawing[:, x1:x2]  # 세로 전체(height) 그대로
+        if roi.size == 0:
+            continue
+
+        roi_zoom = cv2.resize(roi, None, fx=zoom_factor, fy=zoom_factor, interpolation=cv2.INTER_CUBIC)
+        regions.append((region_id, roi_zoom))
+        region_id += 1
+
+    return regions
