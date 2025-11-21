@@ -4,6 +4,7 @@
 .xlsx
 sketch/
 data/
+sketch_v3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
